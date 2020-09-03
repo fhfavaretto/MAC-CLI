@@ -11,12 +11,12 @@ case "$fn" in
 
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
 
-            echo "Please enter the server IP address or domain: "
+            echo "Digite o endereço IP ou domínio do servidor: "
 
             read ipaddress
             if [ ! -z "$ipaddress" -a "$ipaddress" != " " ]; then
 
-                echo "Please enter username: "
+                echo "insira o login: "
 
                 read username
 
@@ -28,16 +28,16 @@ case "$fn" in
                     scp $username@$ipaddress:$firstParameter .
 
                 else
-                    "Please specify the username for the remote server"
+                    "Por favor especifique o nome de usuário para o servidor remoto"
                 fi
 
             else
-                "Please specify the server IP address or domain"
+                "Especifique o endereço IP ou domínio do servidor"
             fi
 
         else
-            echo "Please specify the path to the file on the remote server to download"
-            echo "E.g.: /home/sample/file.jpg"
+            echo "Especifique o caminho para o arquivo no servidor remoto para fazer o download"
+            echo "Ex .: /home/sample/file.jpg"
         fi
     ;;
 
@@ -47,12 +47,12 @@ case "$fn" in
 
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
 
-            echo "Please enter the server IP address or domain: "
+            echo "Digite o endereço IP ou domínio do servidor: "
 
             read ipaddress
             if [ ! -z "$ipaddress" -a "$ipaddress" != " " ]; then
 
-                echo "Please enter username: "
+                echo "Digite o nome de usuário: "
 
                 read username
 
@@ -64,16 +64,16 @@ case "$fn" in
                     scp -r $username@$ipaddress:$firstParameter .
 
                 else
-                    "Please specify the username for the remote server"
+                    "Por favor especifique o nome de usuário para o servidor remoto"
                 fi
 
             else
-                "Please specify the server IP address or domain"
+                "Especifique o endereço IP ou domínio do servidor"
             fi
 
         else
-            echo "Please specify the path to the folder on the remote server to download"
-            echo "E.g.: /home/sample/folder/"
+            echo "Especifique o caminho para a pasta no servidor remoto para fazer o download"
+            echo "Ex .: /home/sample/folder/"
         fi
     ;;
 
@@ -83,12 +83,12 @@ case "$fn" in
 
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
 
-            echo "Please enter the server IP address or domain: "
+            echo "Digite o endereço IP ou domínio do servidor: "
 
             read ipaddress
             if [ ! -z "$ipaddress" -a "$ipaddress" != " " ]; then
 
-                echo "Please enter username: "
+                echo "Digite o nome do usuario: "
 
                 read username
 
