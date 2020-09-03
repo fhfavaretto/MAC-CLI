@@ -1,0 +1,15 @@
+#!/bin/sh
+
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+main() {
+
+    echo "Removendo Mac CLI..."
+	rm /usr/local/bin/mac
+	rm -rf /usr/local/bin/mac-cli
+	echo "${GREEN}Mac CLI foi removido\n${NC}"
+
+}
+
+main
