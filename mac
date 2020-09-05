@@ -4,10 +4,10 @@
 ###########################################################################
 
 # Version: 2.0
-# Date: December 8, 2015
-# Author: Gabriel Guarino
+# Date: setembro 5, 2020
+# Author: Fabio Favaretto
 #
-# Collection of useful functions to automate macOS common tasks
+# coleção de ferramentas shell para macOS para web developers
 #
 ###########################################################################
 
@@ -32,7 +32,7 @@ export echocommand="false"
 export pref_editor="vi"
 
 #--------------------------------------------------------------------
-# Parameters
+# Parametros
 #--------------------------------------------------------------------
 export fn=$1
 export firstParameter=$2
@@ -40,7 +40,7 @@ export secondParameter=$3
 export allParameters=${@:2}
 
 #--------------------------------------------------------------------
-# Colors
+# Cores
 #--------------------------------------------------------------------
 export GREEN='\033[0;32m'
 export GRAY='\033[0;37m'
@@ -51,7 +51,7 @@ export RED='\033[1;31m'
 export NC='\033[0m' # No Color
 
 #--------------------------------------------------------------------
-# List of Commands
+# Lista de comandos
 #--------------------------------------------------------------------
 
 COMMANDS=(
@@ -189,7 +189,7 @@ if [ -z "$fn" ] || [[ "$#" -lt "1" ]]; then
 fi
 
 #--------------------------------------------------------------------
-# Help
+# ajuda
 #--------------------------------------------------------------------
 
 # Documentation / Help

@@ -100,16 +100,16 @@ case "$fn" in
                     # scp -r $username@$ipaddress:$firstParameter .
 
                 else
-                    "Please specify the username for the remote server"
+                    "Por favor especifique o nome de usuário para o servidor remoto"
                 fi
 
             else
-                "Please specify the server IP address or domain"
+                "Especifique o endereço IP ou domínio do servidor"
             fi
 
         else
-            echo "Please specify the database name on the remote server to download"
-            echo "E.g.: mac ssh:download-database database-name"
+            echo "Especifique o nome do banco de dados no servidor remoto para fazer o download"
+            echo "Ex .: mac ssh:download-database database-name"
         fi
     ;;
 
